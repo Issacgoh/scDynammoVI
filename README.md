@@ -54,10 +54,10 @@ DynammoVI's primary objective is to offer an exhaustive framework that not only 
 
 ## Installation and Usage
 
-DynammoVI is currently under development and is available for installation directly from the repository:
+DynammoVI is currently under development and is available for installation directly from the repository (do not install yet):
 
 ```bash
-pip install git+https://github.com/Issacgoh/BreadcrumbsscDynammoVI
+pip install git+https://github.com/Issacgoh/csDynammoVI
 ```
 
 **Note**: As DynammoVI is in the prototype stage, features and functionalities are subject to change. Users are encouraged to check back regularly for updates and enhancements.
