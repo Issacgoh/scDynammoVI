@@ -1,4 +1,4 @@
-# DynammoVI: Dynamic Multi-omic Variational Inference for somatic evolution within Single Cell Data (in-Dev)
+# DynammoVI: Dynamic Multi-omic Variational Inference for somatic evolution within Single Cell Data (in-Dev phase)
 
 ## Overview
 
