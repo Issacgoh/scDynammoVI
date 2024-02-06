@@ -115,3 +115,15 @@ class Decoder(nn.Module):
         
         return scRNA_recon_variant, ATAC_recon_variant, SNV_recon_variant
 
+
+class VAE(nn.Module):
+    def __init__(self, input_dim, latent_dim):
+        super(VAE, self).__init__()
+        self.encoder = Encoder(input_dim, latent_dim)
+        self.decoder = Decoder(latent_dim, input_dim)
+
+    def forward(self, x):
+        z = self.encoder(x)
+        return self.decoder(z)
+
+
