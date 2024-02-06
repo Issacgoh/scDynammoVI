@@ -2,9 +2,9 @@
 
 ## Overview
 
-DynammoVI is a prototype computational framework (in-Dev) designed to integrate single-cell multi-omic data with a focus on capturing the dynamics of somatic evolution and the complexities of aging. By leveraging variational autoencoders (VAEs), DynammoVI aims to construct a comprehensive landscape of cell states, taking into account the stochastic nature of somatic mutations and their implications on epigenetic and gene expression profiles across different tissues.
+DynammoVI is a prototype computational framework (in-Dev) designed to integrate single-cell multi-omic data with a focus on capturing the dynamics of somatic evolution and the complexities of aging. By leveraging popular variational autoencoder (VAEs) architectures, DynammoVI aims to construct a comprehensive landscape of cell states, taking into account the stochastic nature of somatic mutations and their implications on epigenetic and gene expression profiles across different tissues.
 
-Inspired by the principles of MultiVI, inVAE, and looking forward to the possibilities with SAMSVAE, DynammoVI introduces a novel approach to model the temporal non-stationarity in single-cell data, providing insights into the relationships between mutational complexity, aging, and cellular function.
+Inspired by the principles of MultiVI, inVAE, and looking forward to the possibilities with SAMSVAE, DynammoVI introduces a novel approach to model the temporal non-stationarity in single-cell data, providing insights into the relationships between mutational complexity, aging, and cellular function. 
 
 ## Model Architecture
 
@@ -37,8 +37,8 @@ An adversarial component is seamlessly integrated to promote invariance in the l
 Training DynammoVI entails optimizing a composite loss function that encompasses:
 
 - **Reconstruction Losses**: Tailored for each data modality to ensure precise input data reconstruction from the latent representations.
-- **KL Divergence**: Aims to regularize the latent space to adhere to a predefined distribution, typically Gaussian, fostering a smooth latent space.
-- **Adversarial Loss**: Designed to diminish the adversarial network's capacity to predict the covariate from the invariant latent space, thereby reinforcing invariance.
+- **KL Divergence**: Aims to regularize the latent space to adhere to a predefined Gaussian distribution.
+- **Adversarial Loss**: Diminish the adversarial network's capacity to predict the covariate from the invariant latent space, thereby reinforcing invariance.
 
 ## Inspiration and Future Directions
 
