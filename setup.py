@@ -1,0 +1,25 @@
+setup(
+    name='DynammoVI',
+    version='0.1.0',
+    author='Your Name',
+    author_email='your.email@example.com',
+    description='A package for integrating and analyzing single-cell multi-omic data with a focus on somatic evolution.',
+    packages=find_packages(),
+    install_requires=[
+        'anndata',
+        'scanpy',
+        'pandas',
+        'numpy',
+        'torch',
+        "scipy==1.7.3",#1.11.2, 
+         "matplotlib==3.7.1",
+         "seaborn==0.12.2",
+         "scikit-learn",
+         "requests==2.31.0",
+         "psutil==5.9.5",
+         "mygene==3.2.2",
+         "gseapy==1.0.5",
+         "pymc3",
+         "scikit-optimize"
+    ],
+)
